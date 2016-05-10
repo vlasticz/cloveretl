@@ -51,6 +51,8 @@ function integer generate() {
 function integer transform() {
 	$out.0.id = upperCase($in.0.id);
 	$out.0.val = upperCase($in.0.val);
+	
+	// another holy war
 
 	return ALL;
 }
