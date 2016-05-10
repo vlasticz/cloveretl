@@ -44,7 +44,8 @@ function integer generate() {
 // function string getMessage() {}
 ]]></attr>
 </Node>
-<Node guiName="Reformat" guiX="443" guiY="223" id="REFORMAT" type="REFORMAT">
+<Node guiName="Trash" guiX="694" guiY="223" id="TRASH" type="TRASH"/>
+<Node guiName="UpperCase" guiX="443" guiY="223" id="UPPER_CASE" type="REFORMAT">
 <attr name="transform"><![CDATA[//#CTL2
 
 // Transforms input record into output record.
@@ -76,8 +77,7 @@ function integer transform() {
 // function string getMessage() {}
 ]]></attr>
 </Node>
-<Node guiName="Trash" guiX="694" guiY="223" id="TRASH" type="TRASH"/>
-<Edge fromNode="DATA_GENERATOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="REFORMAT:0"/>
-<Edge debugMode="true" fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" outPort="Port 0 (out)" persistedImplicitMetadata="Metadata0" toNode="TRASH:0"/>
+<Edge fromNode="DATA_GENERATOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="UPPER_CASE:0"/>
+<Edge debugMode="true" fromNode="UPPER_CASE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" outPort="Port 0 (out)" persistedImplicitMetadata="Metadata0" toNode="TRASH:0"/>
 </Phase>
 </Graph>
