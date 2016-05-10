@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Graph author="Lukas" created="Tue May 10 13:42:18 CEST 2016" guiVersion="4.2.0.M1" id="1462882772409" licenseCode="CLP1DJAVLI36399945BY" name="gen" showComponentDetails="true">
 <Global>
-<Metadata id="Metadata0">
-<Record fieldDelimiter="|" name="recordName1" recordDelimiter="\r\n" type="delimited">
-<Field name="field1" type="string"/>
-<Field name="field2" type="string"/>
+<Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="recordName1" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field name="id" type="string"/>
+<Field name="val" type="string"/>
 </Record>
 </Metadata>
 <GraphParameters>
@@ -51,8 +51,6 @@ function integer generate() {
 function integer transform() {
 	$out.0.id = upperCase($in.0.id);
 	$out.0.val = upperCase($in.0.val);
-	
-	// something has changed
 
 	return ALL;
 }
